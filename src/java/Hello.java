@@ -4,7 +4,7 @@ public class Hello {
 
         System.out.println("Hello Rini");
 
-        int myFirstNumber = 8;
+        int myFirstNumber = 8 * 5;
         System.out.println(myFirstNumber);
     }
 }
