@@ -1,5 +1,4 @@
-public class ByteIntShortLong {
-
+public class ByteIntShortLong2 {
 
     public static void main(String[] args) {
 
@@ -11,6 +10,7 @@ public class ByteIntShortLong {
         System.out.println(" Integer Minimum Value = " +myMinIntValue);
         System.out.println(" Integer Maximum Value = " +myMaxIntValue);
 
+        System.out.println(" Busted MAX value = " + (myMaxIntValue + 1));
 
     }
 }
