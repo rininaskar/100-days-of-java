@@ -1,4 +1,5 @@
-public class Hello3 {
+public class Add {
+
     public static void main(String[] args) {
 
         int myFirstNumber = 10;
@@ -7,6 +8,4 @@ public class Hello3 {
 
         System.out.println( +myThirdNumber );
     }
-
-
 }
