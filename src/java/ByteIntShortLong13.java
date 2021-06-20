@@ -39,6 +39,14 @@ public class ByteIntShortLong13 {
         short bigShortLiteralValue = 32767;
         System.out.println( bigShortLiteralValue );
 
+        int myTotal = ( myMinIntValue / 2 );
+        System.out.println( myTotal);
+
+        byte myNewByteValue = ( byte ) ( myMinByteValue / 2 );
+        System.out.println( myNewByteValue );
+
+        short myNewShortValue = ( byte ) ( myMinShortValue / 2 );
+        System.out.println( myNewShortValue );
 
 
 
