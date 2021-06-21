@@ -12,9 +12,9 @@ public class Primitive8 {
         System.out.println( "Double minimum value = " + myMinDoubleValue);
         System.out.println( "Double maximum value = " + myMaxDoubleValue);
 
-        int myIntValue = 5 / 2;
-        float myFloatValue = 5f / 2f;
-        double myDoubleValue = 5d / 2d;
+        int myIntValue = 3 / 3;
+        float myFloatValue = 3f / 3f;
+        double myDoubleValue = 3d / 3d;
 
         System.out.println( " MyIntValue= " + myIntValue );
         System.out.println( "MyFloatValue= " + myFloatValue);
