@@ -1,4 +1,4 @@
-public class Ring2 {
+public class Equal {
 
     public static void main(String[] args) {
 
@@ -8,5 +8,8 @@ public class Ring2 {
         System.out.println("myString is equal to " + myString);
         myString = myString + " \u00A9 2019";
         System.out.println("myString is equal to " + myString);
+        String numberString = "250.55";
+        numberString = numberString + "49.95";
+        System.out.println(numberString);
     }
 }

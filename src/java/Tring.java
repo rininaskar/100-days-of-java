@@ -6,7 +6,7 @@ public class Tring {
         //float             //double
         //char              //boolean
 
-        String myString = "This is a string";
+        java.lang.String myString = "This is a string";
         System.out.println("myString is equal to " + myString);
 
 
