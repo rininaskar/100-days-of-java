@@ -1,4 +1,4 @@
-public class Operator2 {
+public class Equal4 {
 
     public static void main(String[] args) {
 
