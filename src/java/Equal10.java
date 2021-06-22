@@ -1,4 +1,4 @@
-public class Equal9 {
+public class Equal10 {
 
     public static void main(String[] args) {
 
@@ -18,6 +18,6 @@ public class Equal9 {
 
         result = result % 3;  // the remainder of (4 % 3) = 1
         System.out.println("4 % 3 = " + result);
-
+        System.out.println("previousResult = " + previousResult);
     }
 }
