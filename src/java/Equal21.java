@@ -1,4 +1,4 @@
-public class Equal20 {
+public class Equal21 {
 
     public static void main(String[] args) {
 
