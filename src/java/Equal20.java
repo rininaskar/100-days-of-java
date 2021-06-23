@@ -3,10 +3,10 @@ public class Equal20 {
     public static void main(String[] args) {
 
         int result = 1 + 2; //1 + 2 = 3
-        System.out.println( "1 + 2 = " + result);
+        System.out.println("1 + 2 = " + result);
         int previousResult = result;
         System.out.println("previousResult = " + previousResult);
-        result = result -1;  //3 - 1 = 2
+        result = result - 1;  //3 - 1 = 2
         System.out.println("3 - 1 = " + result);
         System.out.println("previousResult = " + previousResult);
 
@@ -44,8 +44,9 @@ public class Equal20 {
         System.out.println("10 - 2 = " + result);
 
         boolean isAlien = false;
-        if (isAlien == false)
+        if (isAlien == false) {
             System.out.println("It is not an alien");
-        System.out.println("And I am scared of aliens");
+            System.out.println("And I am scared of aliens");
+        }
     }
 }
