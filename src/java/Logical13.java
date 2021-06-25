@@ -1,4 +1,4 @@
-public class Logical12 {
+public class Logical13 {
 
     public static void main(String[] args) {
 
@@ -19,7 +19,7 @@ public class Logical12 {
             System.out.println("This is true");
         }
         boolean isCar = false;
-        if (isCar = true) {
+        if (isCar == true) {
             System.out.println("This is not supposed to happen");
         }
     }
