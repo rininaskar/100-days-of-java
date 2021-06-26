@@ -1,4 +1,4 @@
-public class Code10 {
+public class Code11 {
 
     public static void main(String[] args) {
 
@@ -8,9 +8,13 @@ public class Code10 {
         int bonus = 100;
 
 
-        if (score == 5000) {
+        if (score == 5000)
+
+
+
+
             System.out.println("Your score was 5000");
-            System.out.println("This was executed");
-        }
+
+
     }
 }
