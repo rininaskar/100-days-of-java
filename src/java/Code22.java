@@ -17,7 +17,7 @@ public class Code22 {
 //        }
 
 
-        if(gameOver) {
+        if(gameOver ) {
             int finalScore = score + (levelCompleted * bonus);
             System.out.println("Your final score was " + finalScore);
         }
