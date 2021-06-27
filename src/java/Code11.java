@@ -9,10 +9,6 @@ public class Code11 {
 
 
         if (score == 5000)
-
-
-
-
             System.out.println("Your score was 5000");
 
 
