@@ -1,4 +1,4 @@
-public class Code21 {
+public class Code22 {
 
     public static void main(String[] args) {
 
@@ -16,6 +16,11 @@ public class Code21 {
 //            System.out.println("Got here");
 //        }
 
+
+        if(gameOver) {
+            int finalScore = score + (levelCompleted * bonus);
+            System.out.println("Your final score was " + finalScore);
+        }
 
 
     }

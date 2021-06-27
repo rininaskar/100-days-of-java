@@ -1,11 +1,10 @@
-public class Code21 {
+public class Code23<gameOver> {
 
-    public static void main(String[] args) {
 
-        boolean gameOver = true;
-        int score = 5000;
-        int levelCompleted = 5;
-        int bonus = 100;
+    boolean gameOver = true;
+    int score = 5000;
+    int levelCompleted = 5;
+    int bonus = 100;
 
 
 //        if (score < 5000 &&  score >1000) {
@@ -18,5 +17,5 @@ public class Code21 {
 
 
 
-    }
+
 }
