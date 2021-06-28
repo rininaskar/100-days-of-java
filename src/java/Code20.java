@@ -4,7 +4,7 @@ public class Code20 {
 
         boolean gameOver = true;
         int score = 5000;
-        int levelCompleted = 5;
+        int levelCompleted = 8;
         int bonus = 100;
 
 
