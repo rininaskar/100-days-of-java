@@ -28,7 +28,7 @@ public class Code24 {
 //        }
 
 
-        score = 10000;
+         score = 10000;
          levelCompleted = 8;
          bonus = 200;
 
