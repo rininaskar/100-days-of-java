@@ -19,7 +19,7 @@ public class Code23<gameOver> {
         //Challenge
         boolean newgameOver = true;
         int newscore = 10000;
-        int newlevelCompleted = 8;
+        int newlevelCompleted =  8;
         int newbonus = 200;
 
         if(newgameOver ) {
