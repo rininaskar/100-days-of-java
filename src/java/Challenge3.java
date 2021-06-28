@@ -8,7 +8,7 @@ public class Challenge3 {
         System.out.println("MyValuesTotal = " + myValuesTotal);
         double theRemainder = myValuesTotal % 40.00d;
         System.out.println("theRemainder = " + theRemainder);
-        boolean isNoRemainder = (theRemainder == 0) ? true : false;
+        boolean isNoRemainder =  (theRemainder == 0) ? true : false;
         System.out.println("isNotRemainder = " + isNoRemainder);
     }
 }
