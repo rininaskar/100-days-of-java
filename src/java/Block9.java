@@ -21,7 +21,7 @@ public class Block9 {
 
         if(gameOver ) {
             int finalScore = score + (levelCompleted * bonus);
-            finalScore += 2000;
+            finalScore += 7000;
             System.out.println("Your final score was " + finalScore);
         }
 
