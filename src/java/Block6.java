@@ -9,7 +9,7 @@ public class Block6 {
 
     }
 
-    public static void  calculateScore(boolean gameOver ,int score, int levelCompleted, int bonus) {
+    public static void   calculateScore(boolean gameOver ,int score, int levelCompleted, int bonus) {
 
         if(gameOver ) {
             int finalScore = score + (levelCompleted * bonus);
