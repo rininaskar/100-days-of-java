@@ -14,7 +14,7 @@ public class Block13 {
         levelCompleted = 8;
         bonus = 200;
 
-        highScore = calculateScore(gameOver, score, levelCompleted, bonus);
+         highScore = calculateScore(gameOver, score, levelCompleted, bonus);
         System.out.println("Your final score was " + highScore);
     }
 
