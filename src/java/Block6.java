@@ -5,7 +5,7 @@ public class Block6 {
 
         calculateScore(true, 800, 5, 100);
 
-        calculateScore(true, 10000, 8, 200);
+         calculateScore(true, 10000, 8, 200);
 
     }
 
