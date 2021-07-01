@@ -28,6 +28,7 @@ public class Challenge7 {
 
         highScorePosition = calculateHighScorePosition(50);
         displayHighScorePosition("Gilbert", highScorePosition);
+
     }
 
     public static void displayHighScorePosition(String playerName, int highScorePosition) {
