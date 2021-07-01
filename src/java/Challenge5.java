@@ -22,7 +22,7 @@ public class Challenge5 {
         System.out.println(playerName + " managed to get into position "
         + highScorePosition + " on the highscore table");
     }
-    public
+
 
 
     public static int  calculateScore(boolean gameOver ,int score, int levelCompleted, int bonus) {
