@@ -56,7 +56,7 @@ public class Challenge9 {
         if(gameOver ) {
             int finalScore = score + (levelCompleted * bonus);
             finalScore += 2000;
-            return finalScore;
+             return finalScore;
         } else {
             return -1;
         }
