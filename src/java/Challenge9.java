@@ -51,7 +51,7 @@ public class Challenge9 {
     }
 
 
-    public static int  calculateScore(boolean gameOver ,int score, int levelCompleted, int bonus) {
+    public static int   calculateScore(boolean gameOver ,int score, int levelCompleted, int bonus) {
 
         if(gameOver ) {
             int finalScore = score + (levelCompleted * bonus);
