@@ -18,7 +18,7 @@ public class Challenge9 {
         System.out.println("Your final score was " + highScore);
 
         int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Rini", highScorePosition);
+        displayHighScorePosition("Rin", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(900);
         displayHighScorePosition("Bob", highScorePosition);
