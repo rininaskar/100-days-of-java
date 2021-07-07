@@ -10,7 +10,7 @@ public class Challenge9 {
         int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
         System.out.println("Your final score was " + highScore);
 
-        score = 10000;
+        score = 1000;
         levelCompleted = 9;
         bonus = 200;
 
