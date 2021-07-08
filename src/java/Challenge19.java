@@ -54,7 +54,7 @@ public class Challenge19 {
 //        }
 //        return 4;
         int position = 4;  //assuming position 4 will be returned
-        if (playerScore >= 1000) {
+        if (playerScore >= 1800) {
             position = 1;
         } else if (playerScore >= 500) {
             position = 2;
