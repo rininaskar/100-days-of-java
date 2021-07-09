@@ -45,7 +45,7 @@ public class Challenge18 {
     }
 
     public static int calculateHighScorePosition(int playerScore) {
-        if(playerScore > 1000) {
+        if(playerScore > 1500) {
             return 1;
         } else if (playerScore > 500) {
             return 2;
