@@ -49,7 +49,7 @@ public class Challenge18 {
             return 1;
         } else if (playerScore > 500) {
             return 2;
-        } else if(playerScore > 200 ) {
+        } else if(playerScore > 100 ) {
             return  3;
         }
             return 4;
