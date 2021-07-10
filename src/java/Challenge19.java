@@ -16,7 +16,7 @@ public class Challenge19 {
         highScore = calculateScore(gameOver, score, levelCompleted, bonus);
         System.out.println("Your final score was " + highScore);
 
-        int highScorePosition = calculateHighScorePosition(1500);
+        int highScorePosition = calculateHighScorePosition(1000);
         displayHighScorePosition("Tim", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(900);
