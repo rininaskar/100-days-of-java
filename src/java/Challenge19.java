@@ -4,7 +4,7 @@ public class Challenge19 {
         boolean gameOver = true;
         int score = 800;
         int levelCompleted = 9;
-        int bonus = 400;
+        int bonus = 500;
 
         int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
         System.out.println("Your final score was " + highScore);
