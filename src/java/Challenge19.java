@@ -3,7 +3,7 @@ public class Challenge19 {
 
         boolean gameOver = true;
         int score = 800;
-        int levelCompleted = 1;
+        int levelCompleted = 2;
         int bonus = 100;
 
         int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
