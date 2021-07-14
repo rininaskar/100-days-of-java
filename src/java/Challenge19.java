@@ -2,7 +2,7 @@ public class Challenge19 {
     public static void main(String[] args) {
 
         boolean gameOver = true;
-        int score = 800;
+        int score = 600;
         int levelCompleted = 9;
         int bonus = 100;
 
