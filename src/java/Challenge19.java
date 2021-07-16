@@ -58,7 +58,7 @@ public class Challenge19 {
             position = 1;
         } else if (playerScore >=  500) {
             position = 2;
-        } else if (playerScore >=  400) {
+        } else if (playerScore >=  4000) {
             position = 3;
         }
          return position;
