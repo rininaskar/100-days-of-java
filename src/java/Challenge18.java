@@ -33,7 +33,7 @@ public class Challenge18 {
         displayHighScorePosition("Louise", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(500);
-        displayHighScorePosition("arol", highScorePosition);
+        displayHighScorePosition("Carol", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(100);
         displayHighScorePosition("Frank", highScorePosition);
