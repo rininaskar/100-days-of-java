@@ -18,10 +18,10 @@ public class Challenge18 {
         System.out.println("Your final score was " + highScore);
 
         int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Timm", highScorePosition);
+        displayHighScorePosition("Tim", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(900);
-        displayHighScorePosition("Bobby", highScorePosition);
+        displayHighScorePosition("Bob", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(400);
         displayHighScorePosition("Percy", highScorePosition);
@@ -45,7 +45,7 @@ public class Challenge18 {
     }
 
     public static int calculateHighScorePosition(int playerScore) {
-        if(playerScore > 1500) {
+        if(playerScore > 100) {
             return 1;
         } else if (playerScore > 500) {
             return 2;
