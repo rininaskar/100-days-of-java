@@ -21,7 +21,7 @@ public class Challenge18 {
         displayHighScorePosition("Timmy", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(900);
-        displayHighScorePosition("Bob", highScorePosition);
+        displayHighScorePosition("Bobb", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(400);
         displayHighScorePosition("Percy", highScorePosition);
