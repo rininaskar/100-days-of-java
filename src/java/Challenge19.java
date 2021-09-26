@@ -35,7 +35,7 @@ public class Challenge19 {
         displayHighScorePosition("Karol", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(100);
-        displayHighScorePosition("Frank",  highScorePosition);
+        displayHighScorePosition("Franky",  highScorePosition);
     }
 
     public static void displayHighScorePosition(String playerName, int highScorePosition) {
