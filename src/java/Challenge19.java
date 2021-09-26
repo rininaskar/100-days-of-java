@@ -17,10 +17,10 @@ public class Challenge19 {
         System.out.println("Your final score was " +   highScore);
 
         int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Timy", highScorePosition);
+        displayHighScorePosition("Tim", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(900);
-        displayHighScorePosition("Bob", highScorePosition);
+        displayHighScorePosition("Bobb", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(400);
         displayHighScorePosition("Percy", highScorePosition);
