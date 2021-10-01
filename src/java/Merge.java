@@ -1,4 +1,5 @@
-public class Challenge19 {
+public class Merge {
+
     public static void main(String[] args) {
 
         boolean gameOver = true;
@@ -61,7 +62,7 @@ public class Challenge19 {
         } else if (playerScore >=  400); {
             position = 3;
         }
-         return position;
+        return position;
     }
 
 
