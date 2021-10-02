@@ -5,10 +5,10 @@ public class Main4 {
         System.out.println("New score is " + newScore);
         calculateScore(75);
         calculateScore();
-
+        calcFeetAndInchesToCentimeters(6, 0);
     }
 
-    public static double calcFeetInchesToCentimeters(double feet, double inches) {
+    public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
 
         if((feet < 0) || ((inches < 0)  && (inches > 12))) {
             return -1;
