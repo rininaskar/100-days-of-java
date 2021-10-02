@@ -5,7 +5,7 @@ public class Main5 {
         System.out.println("New score is " + newScore);
         calculateScore(75);
         calculateScore();
-        calcFeetAndInchesToCentimeters(-10, 1);
+        calcFeetAndInchesToCentimeters(0, 1);
     }
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
