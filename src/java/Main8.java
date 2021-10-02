@@ -9,7 +9,7 @@ public class Main8 {
         if(centimeters <0.0) {
             System.out.println("Invalid parameters");
         }
-        calcFeetAndInchesToCentimeters(157);
+        calcFeetAndInchesToCentimeters(-10);
     }
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
