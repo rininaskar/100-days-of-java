@@ -6,6 +6,7 @@ public class Challenge23 {
         System.out.println(getDurationString(65, 45));
         System.out.println(getDurationString(3945L));
         System.out.println(getDurationString(-41));
+        System.out.println(getDurationString(65, 9));
     }
 
     private static String getDurationString(long minutes, long seconds) {
