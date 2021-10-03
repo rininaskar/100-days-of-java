@@ -22,6 +22,6 @@ public class Challenge21 {
 
         long minutes = seconds / 60;
         long remainingSeconds = seconds % 60;
-        return getDurationString(minutes, seconds);
+        return getDurationString(minutes, remainingSeconds);
     }
 }
