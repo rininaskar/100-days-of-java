@@ -27,7 +27,7 @@ public class Control2 {
             //    break;
 
             default:
-                System.out.println("Was not 1 or 2");
+                System.out.println("Was not 1, 2, 3, 4 or 5");
                 break;
         }
     }
