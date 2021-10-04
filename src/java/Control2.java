@@ -10,7 +10,7 @@ public class Control2 {
         //  System.out.println("Was not 1 or 2");
         //  }
 
-        int switchValue = 1;
+        int switchValue = 2;
 
         switch (switchValue) {
             case 1:
