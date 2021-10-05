@@ -2,7 +2,7 @@ public class Control3 {
 
     public static void main(String[] args) {
 
-        char charValue = 'A';
+        char charValue = 'B';
         switch (charValue) {
             case 'A' :
                 System.out.println("A was found");
