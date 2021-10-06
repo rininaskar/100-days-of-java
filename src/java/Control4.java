@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Control4 {
 
     public static void main(String[] args) {
@@ -20,7 +22,7 @@ public class Control4 {
         }
 
         String month = "JuNE";
-        switch(month) {
+        switch(month.toLowerCase()) {
             case "January":
                 System.out.println("Jan");
                 break;
