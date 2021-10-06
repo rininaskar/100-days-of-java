@@ -23,10 +23,10 @@ public class Control5 {
 
         String month = "JuNE";
         switch(month.toUpperCase()) {
-            case "":
+            case "JANUARY":
                 System.out.println("Jan");
                 break;
-            case "june":
+            case "JUNE":
                 System.out.println("Jun");
                 break;
             default:
