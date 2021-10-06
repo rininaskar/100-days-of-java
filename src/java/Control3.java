@@ -11,7 +11,7 @@ public class Control3 {
                 System.out.println("B was found");
                 break;
             case 'C' : case 'D' : case 'E':
-                System.out.println(charValue + "was found");
+                System.out.println(charValue + " was found");
                 break;
 
             default:
