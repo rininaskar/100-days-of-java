@@ -19,7 +19,7 @@ public class Control4 {
                 break;
         }
 
-        String month = "January";
+        String month = "january";
         switch(month) {
             case "January":
                 System.out.println("Jan");
