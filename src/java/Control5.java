@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Control5 {
 
     public static void main(String[] args) {
@@ -20,11 +22,11 @@ public class Control5 {
         }
 
         String month = "JuNE";
-        switch(month.toLowerCase()) {
-            case "January":
+        switch(month.toUpperCase()) {
+            case "":
                 System.out.println("Jan");
                 break;
-            case "June":
+            case "june":
                 System.out.println("Jun");
                 break;
             default:
