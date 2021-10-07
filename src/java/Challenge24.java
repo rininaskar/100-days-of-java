@@ -3,6 +3,13 @@ public class Challenge24 {
     public static void main(String[] args) {
 
         printDayOfTheWeek(-1);
+        printDayOfTheWeek(0);
+        printDayOfTheWeek(1);
+        printDayOfTheWeek(2);
+        printDayOfTheWeek(3);
+        printDayOfTheWeek(4);
+        printDayOfTheWeek(5);
+        printDayOfTheWeek(6);
 
     }
 
