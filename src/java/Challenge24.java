@@ -10,6 +10,7 @@ public class Challenge24 {
         printDayOfTheWeek(4);
         printDayOfTheWeek(5);
         printDayOfTheWeek(6);
+        printDayOfTheWeek(7);
 
     }
 
