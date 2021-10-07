@@ -30,6 +30,8 @@ public class Challenge24 {
             System.out.println("Friday");
         }else if(day == 6) {
             System.out.println("Saturday");
+        } else {
+            System.out.println("Invalid Day");
         }
 
 
