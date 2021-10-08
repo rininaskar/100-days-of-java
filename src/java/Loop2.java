@@ -8,7 +8,7 @@ public class Loop2 {
         System.out.println("10,000 at 5% interest = " + calculateInterest(10000.0, 5.0));
 
         for(int i=2; i<9; i++) {
-            System.out.println("10,000 at " + i + "% interest = " +calculateInterest(10000.0, i));
+            System.out.println("10,000 at " + i + "% interest = " + String.format("%.2f",calculateInterest(10000.0, i)));
         }
 
 
