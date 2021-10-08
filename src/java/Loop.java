@@ -6,6 +6,7 @@ public class Loop {
     for (int i=1; i<6; i++) {
         System.out.println("Loop" + i + " Hello!");
     }
+
     }
 
     public static double calculateInterest(double amount,double interestRate) {
