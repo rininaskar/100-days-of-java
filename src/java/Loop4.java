@@ -36,6 +36,7 @@ public class Loop4 {
         }
 
         for (int i=2; i<= (long) Math.sqrt(n); i++) {
+            System.out.println("Looping" + i);
             if(n % i == 0) {
                 return false;
             }
