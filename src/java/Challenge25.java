@@ -13,7 +13,9 @@ public class Challenge25 {
                 System.out.println("Found Number = " + i);
             }
 
-
+            if(count == 5) {
+                break;
+            }
         }
     }
 }
