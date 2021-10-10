@@ -17,5 +17,6 @@ public class Challenge25 {
                 break;
             }
         }
+        System.out.println("Sum is " + sum);
     }
 }
