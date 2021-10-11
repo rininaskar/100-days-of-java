@@ -7,5 +7,6 @@ public class Loop5 {
             System.out.println("Count value is" + count);
             count++;
         }
+        //FOR LOOP BELOW IS NOT IDENTICAL TO WHILE LOOP ABOVE
     }
 }
