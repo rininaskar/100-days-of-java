@@ -8,6 +8,10 @@ public class Loop7 {
             count++;
         }
 
+        for (int i=6; i!= 6; i++) {
+            System.out.println("Count value is " + count);
+        }
+
   //      count = 1;
   //      while(true) {
   //          if(count == 6) {
