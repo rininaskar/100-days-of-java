@@ -21,10 +21,10 @@ public class Loop8 {
         //          count++;
         //      }
 
-                count = 1;
-                do {
-                    System.out.println("Count value was " + count);
-                    count++;
-                } while (count != 6);
+      //          count = 6;
+      //          do {
+      //              System.out.println("Count value was " + count);
+      //              count++;
+      //          } while (count != 6);
     }
 }
