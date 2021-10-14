@@ -35,7 +35,7 @@ public class Loop8 {
             if (!isEvenNumber(number)) {
                 continue;
             }
-
+            System.out.println("Even number " + number);
         }
     }
      public static boolean isEvenNumber(int number) {
