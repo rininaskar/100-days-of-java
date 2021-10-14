@@ -2,15 +2,15 @@ public class Loop8 {
 
     public static void main(String[] args) {
 
-      //  int count = 6;
-  //      while (count != 6) {
-  //          System.out.println("Count value is " + count);
-  //          count++;
-  //      }
+        //  int count = 6;
+        //      while (count != 6) {
+        //          System.out.println("Count value is " + count);
+        //          count++;
+        //      }
 
-  //      for (int i=6; i!= 6; i++) {
-  //          System.out.println("Count value is " + count);
-  //      }
+        //      for (int i=6; i!= 6; i++) {
+        //          System.out.println("Count value is " + count);
+        //      }
 
         //      count = 1;
         //      while(true) {
@@ -21,11 +21,18 @@ public class Loop8 {
         //          count++;
         //      }
 
-      //          count = 6;
-      //          do {
-      //              System.out.println("Count value was " + count);
-      //              count++;
-      //          } while (count != 6);
+        //          count = 6;
+        //          do {
+        //              System.out.println("Count value was " + count);
+        //              count++;
+        //          } while (count != 6);
+
+        int number = 4;
+        int finishNumber = 20;
+
+        while (number <= finishNumber) {
+            number++;
+        }
     }
      public static boolean isEvenNumber(int number) {
         if ((number % 2)  == 0) {
