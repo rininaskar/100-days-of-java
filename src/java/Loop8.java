@@ -32,6 +32,10 @@ public class Loop8 {
 
         while (number <= finishNumber) {
             number++;
+            if (!isEvenNumber(number)) {
+                continue;
+            }
+
         }
     }
      public static boolean isEvenNumber(int number) {
