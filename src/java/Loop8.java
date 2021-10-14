@@ -2,7 +2,7 @@ public class Loop8 {
 
     public static void main(String[] args) {
 
-        int count = 6;
+      //  int count = 6;
   //      while (count != 6) {
   //          System.out.println("Count value is " + count);
   //          count++;
@@ -27,4 +27,12 @@ public class Loop8 {
       //              count++;
       //          } while (count != 6);
     }
+     public static boolean isEvenNumber(int number) {
+        if ((number % 2)  == 0) {
+            return true;
+        } else {
+            return false;
+        }
+     }
+
 }
