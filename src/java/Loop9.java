@@ -8,5 +8,8 @@ public class Loop9 {
             count++;
         }
 
+        for (int i=6; i!= 6; i++) {
+            System.out.println("Count value is " + count);
+        }
     }
 }
