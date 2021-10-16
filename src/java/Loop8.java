@@ -36,6 +36,11 @@ public class Loop8 {
             if (!isEvenNumber(number)) {
                 continue;
             }
+
+            evenNumbersFound++;
+            if (evenNumbersFound >5) {
+                break;
+            }
             System.out.println("Even number " + number);
         }
         System.out.println("Total even numbers found = " + evenNumbersFound);
