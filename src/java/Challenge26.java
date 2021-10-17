@@ -3,8 +3,8 @@ public class Challenge26 {
     public static void main(String[] args) {
 
         System.out.println("The sum of digits in number 125 is " + sumDigits(125));
-        System.out.println("The sum of digits in number 125 is " + sumDigits(-125));
-        System.out.println("The sum of digits in number 125 is " + sumDigits(4));
+        System.out.println("The sum of digits in number -125 is " + sumDigits(-125));
+        System.out.println("The sum of digits in number  is " + sumDigits(4));
         System.out.println("The sum of digits in number 125 is " + sumDigits(32123));
     }
 
