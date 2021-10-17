@@ -5,6 +5,7 @@ public class Challenge26 {
         System.out.println("The sum of digits in number 125 is " + sumDigits(125));
         System.out.println("The sum of digits in number 125 is " + sumDigits(-125));
         System.out.println("The sum of digits in number 125 is " + sumDigits(4));
+        System.out.println("The sum of digits in number 125 is " + sumDigits(32123));
     }
 
     private static int sumDigits(int number) {
