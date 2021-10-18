@@ -2,7 +2,7 @@ public class Parsing {
 
     public static void main(String[] args) {
 
-        String numberAsString = "2018" ;
+        String numberAsString = "2018a" ;
         System.out.println("numberAsString " + numberAsString);
 
         int number = Integer.parseInt(numberAsString);
