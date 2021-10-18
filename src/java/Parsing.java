@@ -4,5 +4,8 @@ public class Parsing {
 
         String numberAsString = "2018" ;
         System.out.println("numberAsString " + numberAsString);
+
+        int number = Integer.parseInt(numberAsString);
+        System.out.println("number = " + number);
     }
 }
