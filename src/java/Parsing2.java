@@ -2,7 +2,7 @@ public class Parsing2 {
 
     public static void main(String[] args) {
 
-        String numberAsString = "2016" ;
+        String numberAsString = "2018" ;
         System.out.println("numberAsString " + numberAsString);
 
         double number = Double.parseDouble(numberAsString);
