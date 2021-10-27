@@ -8,5 +8,7 @@ public class Reader {
         String name = scanner.nextLine();
 
         System.out.println(" Your name is " + name);
+
+        scanner.close();
     }
 }
