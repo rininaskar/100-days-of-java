@@ -10,7 +10,7 @@ public class Reader {
         String name = scanner.nextLine();
         int age = 2018 - yearOfBirth;
 
-        System.out.println(" Your name is " + name);
+        System.out.println(" Your name is " + name + ", and you are " + age + " years old.");
 
         scanner.close();
     }
