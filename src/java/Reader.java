@@ -9,7 +9,7 @@ public class Reader {
         scanner.nextLine();
         System.out.println("Enter your name: ");
         String name = scanner.nextLine();
-        int age = 2022 - yearOfBirth;
+        int age = 2019 - yearOfBirth;
 
         System.out.println(" Your name is " + name + ", and you are " + age + " years old.");
 
