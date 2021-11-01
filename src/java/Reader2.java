@@ -5,6 +5,12 @@ public class Reader2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your year of birth");
+
+        boolean hasNextInt = scanner.hasNextInt();
+
+        if (hasNextInt){
+
+        }
         int yearOfBirth = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Enter your name: ");
