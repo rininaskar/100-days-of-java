@@ -13,7 +13,7 @@ public class Reader2 {
             scanner.nextLine();
             System.out.println("Enter your name: ");
             String name = scanner.nextLine();
-            int age = 2019 - yearOfBirth;
+            int age = 2018 - yearOfBirth;
 
             if (age >= 0 && age <= 100) {
                 System.out.println(" Your name is " + name + ", and you are " + age + " years old.");
