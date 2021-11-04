@@ -26,6 +26,7 @@ public class Challenge27 {
             }
             scanner.nextLine(); //handle end of line (enter key)
         }
-          scanner.close();
+        System.out.println("sum = " + sum);
+        scanner.close();
     }
 }
