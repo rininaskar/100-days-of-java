@@ -21,6 +21,8 @@ public class Challenge27 {
                 if (counter == 10) {
                     break;
                 }
+            } else {
+                System.out.println("Invalid number");
             }
         }
     }
