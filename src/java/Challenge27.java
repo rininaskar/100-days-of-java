@@ -19,9 +19,9 @@ public class Challenge27 {
                 int number = scanner.nextInt();
                 counter++;
                 sum += number;
-                if (counter == 10) {
-                    break;
-                }
+            //    if (counter == 10) {
+            //        break;
+            //    }
             } else {
                 System.out.println("Invalid number");
             }
