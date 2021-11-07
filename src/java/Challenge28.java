@@ -12,6 +12,9 @@ public class Challenge28 {
         while (true) {
 
             System.out.println("Enter number");
+            boolean isAntInt = scanner.hasNextInt();
+
+
         }
     }
 }
