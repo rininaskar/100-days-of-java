@@ -14,7 +14,12 @@ public class Challenge28 {
             System.out.println("Enter number");
             boolean isAntInt = scanner.hasNextInt();
 
+            if (isAntInt) {
+                int number = scanner.nextInt();
 
+            } else {
+                break;
+            }
         }
     }
 }
