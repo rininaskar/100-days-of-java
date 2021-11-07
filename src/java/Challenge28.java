@@ -17,9 +17,17 @@ public class Challenge28 {
             if (isAntInt) {
                 int number = scanner.nextInt();
 
+                if (number > max) {
+                    max = number;
+                }
+                if (number < min) {
+                    min = number;
+                }
+
             } else {
                 break;
             }
         }
+        scanner.close();
     }
 }
