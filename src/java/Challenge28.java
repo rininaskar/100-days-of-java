@@ -27,7 +27,9 @@ public class Challenge28 {
             } else {
                 break;
             }
+            scanner.nextLine();
         }
+        System.out.println("min=" + min + "max=" + max);
         scanner.close();
     }
 }
