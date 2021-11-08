@@ -17,6 +17,12 @@ public class Challenge28 {
             if (isAntInt) {
                 int number = scanner.nextInt();
 
+                if (first) {
+                    first = false;
+                    min = number;
+                    max = number;
+                }
+
                 if (number > max) {
                     max = number;
                 }
