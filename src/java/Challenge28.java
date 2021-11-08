@@ -6,8 +6,8 @@ public class Challenge28 {
 
         Scanner scanner = new Scanner(System.in);
 
-        int min = 0;
-        int max = 0;
+        int min = 2147483647;
+        int max = -2147483648;
       //  boolean first = true;
         while (true) {
 
