@@ -8,7 +8,7 @@ public class Challenge28 {
 
         int min = 0;
         int max = 0;
-
+        boolean first = true;
         while (true) {
 
             System.out.println("Enter number");
