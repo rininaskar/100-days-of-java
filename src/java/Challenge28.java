@@ -8,7 +8,7 @@ public class Challenge28 {
 
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-      //  boolean first = true;
+       boolean first = true;
         while (true) {
 
             System.out.println("Enter number");
@@ -17,11 +17,11 @@ public class Challenge28 {
             if (isAntInt) {
                 int number = scanner.nextInt();
 
-      //          if (first) {
-      //              first = false;
-      //              min = number;
-      //              max = number;
-      //          }
+               if (first) {
+                    first = false;
+                    min = number;
+                    max = number;
+                }
 
                 if (number > max) {
                     max = number;
