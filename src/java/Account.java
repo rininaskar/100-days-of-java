@@ -4,5 +4,5 @@ public class Account {
     private double balance;
     private String customerName;
     private String customerEmailAddress;
-
+    private String customerPhoneNumber;
 }
