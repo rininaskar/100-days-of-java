@@ -1,4 +1,7 @@
 public class Account {
 
-    private String accountNumber;
+    private String number;
+    private double balance;
+    private String customerName;
+
 }
