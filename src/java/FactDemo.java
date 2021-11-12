@@ -12,7 +12,7 @@ public class FactDemo {
         for (int j = n; j>=1; j--) {
             f=f*j;
         }
-
+            System.out.println("The factorial of" + n + "in" + f);
         }
     }
 }
