@@ -9,6 +9,9 @@ public class FactDemo {
         {
             n=Integer.parseInt(args[i]);
             int f = 1;
+        for (int j = n; j>=1; j--) {
+            f=f*j;
+        }
 
         }
     }
