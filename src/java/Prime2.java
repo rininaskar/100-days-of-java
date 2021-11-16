@@ -9,6 +9,8 @@ public class Prime2 {
         Scanner sc= new Scanner(System.in);
         n1= sc.nextInt();
         System.out.println("Enter the upper limit");
+        n2 = sc.nextInt();
+        System.out.println("The prime nos are:");
 
     }
 }
