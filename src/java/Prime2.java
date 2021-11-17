@@ -11,6 +11,16 @@ public class Prime2 {
         System.out.println("Enter the upper limit");
         n2 = sc.nextInt();
         System.out.println("The prime nos are:");
+        for (i=n1;i<=n2;i++)
+        {
+            count=1;
+            for (j=2;j<=i;j++)
+            {
+                if (i%j == 0)
+                    count++;
+            }
+
+        }
 
     }
 }
