@@ -19,7 +19,8 @@ public class Prime2 {
                 if (i%j == 0)
                     count++;
             }
-
+             if(count == 2)
+                 System.out.println(i);
         }
 
     }
