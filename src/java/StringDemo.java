@@ -11,5 +11,7 @@ public class StringDemo {
         str = sc.nextLine(); //reads the string value from the user
         System.out.println("\n--------------------------\n");
         System.out.println("string length is: " +str.length());
+        System.out.println("\n Upper Case= " +str.toUpperCase());
+        System.out.println("\n Lower Case= " +str.toLowerCase());
     }
 }
