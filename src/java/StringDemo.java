@@ -13,5 +13,7 @@ public class StringDemo {
         System.out.println("string length is: " +str.length());
         System.out.println("\n Upper Case= " +str.toUpperCase());
         System.out.println("\n Lower Case= " +str.toLowerCase());
+        System.out.println("\n original string : " +str); //strings are immutable
+        System.out.println(" Comparison with string");
     }
 }
