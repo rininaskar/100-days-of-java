@@ -9,5 +9,7 @@ public class StringDemo {
         System.out.println("\n-------------------------\n");
         System.out.println("Enter a string \n");
         str = sc.nextLine(); //reads the string value from the user
+        System.out.println("\n--------------------------\n");
+        System.out.println("string length is: " +str.length());
     }
 }
