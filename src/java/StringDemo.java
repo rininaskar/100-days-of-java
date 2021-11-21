@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class StringDemo {
@@ -15,5 +16,11 @@ public class StringDemo {
         System.out.println("\n Lower Case= " +str.toLowerCase());
         System.out.println("\n original string : " +str); //strings are immutable
         System.out.println(" Comparison with string");
+        String st1 = "Rini";
+        String st2 = "Rini";
+        String st3 = "Naskar";
+        System.out.println(st1.compareTo(st3));
+        System.out.println(st3.compareTo(st1));
+
     }
 }
