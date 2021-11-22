@@ -23,6 +23,10 @@ public class StringDemo {
         System.out.println(st3.compareTo(st1));
         System.out.println("\n lastindexOf('c')=" +str.lastIndexOf('c'));
         String str2 = "Java Programming";
+        System.out.println("\n Java Programming-indexOf(P)=" +str2.indexOf('P'));
+        System.out.println("\n replace=" +str.repeat('I'));
+        str1 = str.concat("WELCOME");
+        System.out.println("\n after Concatination:" +str1);
 
     }
 }
