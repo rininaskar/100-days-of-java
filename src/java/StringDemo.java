@@ -21,6 +21,8 @@ public class StringDemo {
         String st3 = "Naskar";
         System.out.println(st1.compareTo(st3));
         System.out.println(st3.compareTo(st1));
+        System.out.println("\n lastindexOf('c')=" +str.lastIndexOf('c'));
+        String str2 = "Java Programming";
 
     }
 }
