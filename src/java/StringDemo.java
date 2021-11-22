@@ -31,6 +31,7 @@ public class StringDemo {
         System.out.println("\n After trim():" +str1.trim());
         char ch[];
         ch= st3.toCharArray();
-
+        for (int i=0;i<ch.length;i++)
+            System.out.println(ch[i]);
     }
 }
