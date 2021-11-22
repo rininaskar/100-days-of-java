@@ -27,6 +27,10 @@ public class StringDemo {
         System.out.println("\n replace=" +str.repeat('I'));
         str1 = str.concat("WELCOME");
         System.out.println("\n after Concatination:" +str1);
+        str1= "        hello bca";
+        System.out.println("\n After trim():" +str1.trim());
+        char ch[];
+        ch= st3.toCharArray();
 
     }
 }
