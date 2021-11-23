@@ -21,5 +21,13 @@ public class Armstrong {
             sum = (int) (sum + Math.pow(b,length));
             n = n / 10;
         }
+        if(sum == temp2)
+        {
+            System.out.println("Given number is Armstrong:");
+        }
+        else
+        {
+            System.out.println("Given number is not Armstrong:");
+        }
     }
 }
