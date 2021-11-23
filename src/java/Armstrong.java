@@ -15,5 +15,11 @@ public class Armstrong {
             temp1 = temp1 / 10;
             length++;
         }
+        while (n > 0)
+        {
+            b = n % 10;
+            sum = (int) (sum + Math.pow(b,length));
+            n = n / 10;
+        }
     }
 }
