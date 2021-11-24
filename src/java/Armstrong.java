@@ -23,11 +23,11 @@ public class Armstrong {
         }
         if(sum == temp2)
         {
-            System.out.println("Given number is Armstrong:");
+            System.out.println("Given number is Armstrong");
         }
         else
         {
-            System.out.println("Given number is not Armstrong:");
+            System.out.println("Given number is not Armstrong");
         }
     }
 }
