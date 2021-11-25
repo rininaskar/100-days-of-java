@@ -24,6 +24,9 @@ public class BubbleSort {
                     }
                 }
             }
+            System.out.println("The sorted array in ascending order:");
+            for (i=0;i<n;i++)
+                System.out.println(a[i] + "   ");
         } catch ( ArrayIndexOutOfBoundsException e) {
 
 
