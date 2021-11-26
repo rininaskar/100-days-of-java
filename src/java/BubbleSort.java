@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class BubbleSort {
@@ -31,9 +32,10 @@ public class BubbleSort {
             for (i=n-1;i>=0;i--)
                 System.out.println(a[i] + "   ");
         } catch ( ArrayIndexOutOfBoundsException e) {
-
-
-
+            System.out.println("Check no of elements");
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Check the input");
         }
     }
 }
