@@ -13,6 +13,9 @@ public class Fibonacci {
         for (int i=2;i<num;i++)
         {
             temp = fib1 + fib2;
+            System.out.print("  "+temp);
+            fib1 = fib2;
+            fib2 = temp;
         }
     }
 }
