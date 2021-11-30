@@ -11,16 +11,16 @@ public class Prime1 {
         System.out.println("Enter the upper limit");
         n = sc.nextInt();
         System.out.println("The prime numbers are");
-        for(int j=m; j<=n; j++)
+        for( i=m; i<=n; i++)
         {
             f=0;
-            for(i=2; i<j-1; i--)
+            for(int j=1; j<=i; j++)
             {
-                if (j%i==0)
-                    f=1;
+                if (i%j==0)
+                    f=f+1;
             }
-            if(f==0)
-                System.out.println(j);
+            if(f==2)
+                System.out.println(i);
         }
     }
 }
