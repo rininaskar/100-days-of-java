@@ -9,5 +9,7 @@ public class Gcd_Lcm {
         int x = sc.nextInt();
         System.out.println("Enter second number: ");
         int y = sc.nextInt();
+        System.out.println("The GCD of two numbers:" );
+        System.out.println("The LCM of two numbers:" );
     }
 }
