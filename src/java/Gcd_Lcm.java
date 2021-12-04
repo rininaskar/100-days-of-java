@@ -17,6 +17,18 @@ public class Gcd_Lcm {
         return r;
     }
 
+    static int lcm(int x, int y)
+    {
+        int a,i;
+        a=(x>y)?x:y;
+        for(i=a;i<=x*y;i=i+a)
+        {
+            if(i%x == 0 && i%y == 0)
+                break;
+        }
+        return i;
+    }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
