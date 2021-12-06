@@ -9,5 +9,10 @@ public class BasicVector {
         vct.add("Second");
         vct.add("Third");
         vct.add("Fourth");
+        System.out.println(vct);
+        System.out.println(vct.size());
+        System.out.println(vct.capacity());
+        vct.add(3,"JAVA");
+        System.out.println(vct);
     }
 }
