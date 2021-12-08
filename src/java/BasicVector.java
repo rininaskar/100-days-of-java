@@ -17,5 +17,7 @@ public class BasicVector {
         System.out.println("\n Elements at index 3 is:" +vct.get(3));
         System.out.println("\n The first element of the vector is:" +vct.firstElement());
         System.out.println("\n The last element of the vector is:" +vct.lastElement());
+        System.out.println("\n Is this vector empty?" +vct.isEmpty());
+        vct.removeAllElements();
     }
 }
