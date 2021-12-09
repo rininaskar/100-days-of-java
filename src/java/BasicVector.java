@@ -19,5 +19,7 @@ public class BasicVector {
         System.out.println("\n The last element of the vector is:" +vct.lastElement());
         System.out.println("\n Is this vector empty?" +vct.isEmpty());
         vct.removeAllElements();
+        System.out.println("\n Is this vector empty?" +vct.isEmpty());
+        System.out.println(vct);
     }
 }
