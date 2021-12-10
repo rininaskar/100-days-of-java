@@ -21,5 +21,6 @@ public class BasicVector {
         vct.removeAllElements();
         System.out.println("\n Is this vector empty?" +vct.isEmpty());
         System.out.println(vct);
+        System.out.println(vct.size());
     }
 }
