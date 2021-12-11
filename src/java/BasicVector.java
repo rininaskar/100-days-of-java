@@ -22,5 +22,6 @@ public class BasicVector {
         System.out.println("\n Is this vector empty?" +vct.isEmpty());
         System.out.println(vct);
         System.out.println(vct.size());
+        System.out.println(vct.get(7));
     }
 }
