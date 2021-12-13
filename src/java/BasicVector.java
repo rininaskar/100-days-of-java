@@ -25,5 +25,9 @@ public class BasicVector {
         System.out.println("A");
         System.out.println("GOOD");
         System.out.println("DAY");
+        System.out.println("\n Vector is now" +vct);
+        System.out.println(vct.contains("WONDERFUL"));
+        vct.remove("A");
+        System.out.println("\n Vector is now" +vct);
     }
 }
