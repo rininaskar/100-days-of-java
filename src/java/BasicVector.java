@@ -12,7 +12,7 @@ public class BasicVector {
         System.out.println(vct);
         System.out.println(vct.size());
         System.out.println(vct.capacity());
-        vct.add(3,"JAVA");
+        vct.add(9,"JAVA");
         System.out.println(vct);
         System.out.println("\n Elements at index 3 is:" +vct.get(3));
         System.out.println("\n The first element of the vector is:" +vct.firstElement());
@@ -29,5 +29,6 @@ public class BasicVector {
         System.out.println(vct.contains("WONDERFUL"));
         vct.remove("A");
         System.out.println("\n Vector is now" +vct);
+
     }
 }
