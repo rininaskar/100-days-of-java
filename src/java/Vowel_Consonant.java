@@ -25,6 +25,10 @@ public class Vowel_Consonant {
             case 'u':
             case 'U':
                 System.out.println("The given character" + n + "is a vowel");
+                break;
+            default:
+                System.out.println("The given character " + n + "is a consonant");
+                break;
         }
     }
 }
