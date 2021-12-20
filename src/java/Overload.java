@@ -6,6 +6,10 @@ public class Overload
         {
             return (3.14 * r * r);
         }
+        static int area(int l, int b)
+        {
+            return (l*b);
+        }
         public static void main (String[]args) {
         {
             Scanner sc = new Scanner(System.in);
@@ -14,5 +18,4 @@ public class Overload
             System.out.println("Area of circle is:" +area(r));
         }
     }
-
 }
