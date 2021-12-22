@@ -12,12 +12,16 @@ public class Overload
         }
         public static void main (String[]args) {
         {
-            double r;
-            try (Scanner sc = new Scanner(System.in)) {
-                System.out.println("Enter the radius of ");
-                r = sc.nextDouble();
-            }
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter the radius of ");
+            double r = sc.nextDouble();
             System.out.println("Area of circle is:" +area(r));
+
+            System.out.println("Enter the l and b of a rectangle:" );
+            int l = sc.nextInt();
+            int b = sc.nextInt();
+            System.out.println("Area of rectangle is:" +area(l,b));
+
         }
     }
 }
