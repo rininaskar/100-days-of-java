@@ -26,6 +26,10 @@ public class Overload
             int b = sc.nextInt();
             System.out.println("Area of rectangle is:" +area(l,b));
 
+            System.out.println("Enter the sides of a square:");
+            int s = sc.nextInt();
+            System.out.println("Area of square is:" +area(s));
+
         }
     }
 }
