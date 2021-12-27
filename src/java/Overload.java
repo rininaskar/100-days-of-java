@@ -34,10 +34,7 @@ public class Overload
             int s = sc.nextInt();
             System.out.println("Area of square is:" +area(s));
 
-            System.out.println("Enter the base and height of a triangle:");
-            double base = sc.nextDouble();
-            double height = sc.nextDouble();
-            System.out.println("Area of triangle is:" +area(base,height));
+
 
         }
     }
