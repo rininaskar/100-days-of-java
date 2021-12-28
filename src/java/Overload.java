@@ -14,10 +14,7 @@ public class Overload
         {
             return (s*s);
         }
-        static double area(double base, double height)
-        {
-            return (0.5*base*height);
-        }
+
         public static void main (String[]args) {
         {
             Scanner sc = new Scanner(System.in);
