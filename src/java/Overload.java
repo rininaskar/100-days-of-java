@@ -19,10 +19,7 @@ public class Overload
             double r = sc.nextDouble();
             System.out.println("Area of circle is:" +area(r));
 
-            System.out.println("Enter the l and b of a rectangle:" );
-            int l = sc.nextInt();
-            int b = sc.nextInt();
-            System.out.println("Area of rectangle is:" +area(l,b));
+
 
 
 
