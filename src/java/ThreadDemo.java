@@ -35,7 +35,7 @@ public class ThreadDemo {
         new NewThread("three");
         try
         {
-            for (int i=7; i>0; i--)
+            for (int i=5; i>0; i--)
             {
                 System.out.println("Main Thread:" +i);
                 Thread.sleep(500);
