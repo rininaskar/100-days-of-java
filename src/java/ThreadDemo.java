@@ -16,7 +16,7 @@ class NewThread implements Runnable
             for (int i = 5; i>0; i--)
             {
                 System.out.println(name+ ":" +i);
-                Thread.sleep(500);
+                Thread.sleep(1000);
             }
         }
         catch (InterruptedException e)
