@@ -27,6 +27,6 @@ public class Frequency {
             if (fr[i] != visited)
                 System.out.println("    " + arr[i] + "    |    " + fr[i]);
         }
-        System.out.println("----------------------------------------");
+        System.out.println("-----------------------------------------");
     }
     }
