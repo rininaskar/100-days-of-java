@@ -29,7 +29,7 @@ i - iterator
 //prints the last row from the remaining rows   
             if (k < m)
             {
-                for (i = n - 1; i >= l; --i)
+                for (i = n -1; i >= l; --i)
                 {
                     System.out.print(a[m - 1][i] + " ");
                 }
