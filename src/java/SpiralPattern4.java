@@ -11,7 +11,7 @@ l - starting column index
 n - ending column index 
 i - iterator 
 */
-        while (k < m && l < n)
+        while (k <  m && l < n)
         {
 //prints the first row from the remaining rows  
             for (i = l; i < n; ++i)
