@@ -1,9 +1,7 @@
-public class BinaryTrees {
-
-    import java.util.LinkedList;
+import java.util.LinkedList;
 import java.util.Queue;
 
-    public class BinaryTree {
+    public class BinaryTrees {
 
         //Represent the node of binary tree
         public static class Node{
@@ -22,7 +20,7 @@ import java.util.Queue;
         //Represent the root of binary tree
         public Node root;
 
-        public BinaryTree(){
+        public BinaryTrees(){
             root = null;
         }
 
@@ -69,7 +67,7 @@ import java.util.Queue;
 
         public static void main(String[] args) {
 
-            BinaryTree bt = new BinaryTree();
+            BinaryTrees bt = new BinaryTrees();
             //Add nodes to the binary tree
             bt.root = new Node(1);
             bt.root.left = new Node(2);
@@ -84,4 +82,4 @@ import java.util.Queue;
             System.out.println("Maximum width of the binary tree: " + bt.findMaximumWidth());
         }
     }
-}
+

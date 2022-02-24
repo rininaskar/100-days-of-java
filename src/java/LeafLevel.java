@@ -61,7 +61,7 @@ public class LeafLevel {
         bt.root.right = new Node(3);
         bt.root.left.left = new Node(4);
         bt.root.right.left = new Node(5);
-        bt.root.right.right = new Node(6);
+        bt.root.right.right = new Node(7);
 
         //Checks whether all leaves of given binary tree is at same level
         if(bt.isSameLevel(bt.root, 1))
