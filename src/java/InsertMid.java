@@ -119,7 +119,7 @@ public class InsertMid {
         dList.display();
 
         //Adding node '5' in the middle
-        dList.addInMid(5);
+        dList.addInMid(6);
         System.out.println("Updated List: ");
         dList.display();
     }
