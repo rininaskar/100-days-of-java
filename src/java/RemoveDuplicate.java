@@ -93,7 +93,7 @@ public class RemoveDuplicate {
         dList.addNode(2);
         dList.addNode(4);
         dList.addNode(5);
-        dList.addNode(3);
+        dList.addNode(9);
 
         System.out.println("Originals list: ");
         dList.display();
