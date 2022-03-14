@@ -1,104 +1,90 @@
 public class SortList {
 
-    class Node{
+    public class Node{
         int data;
-        Node previous;
         Node next;
-
         public Node(int data) {
             this.data = data;
         }
     }
-
-    //Represent the head and tail of the doubly linked list
-    Node head, tail = null;
-
-    //addNode() will add a node to the list
-    public void addNode(int data) {
-        //Create a new node
+    //Declaring head and tail pointer as null.
+    public Node head = null;
+    public Node tail = null;
+    //This function will add the new node at the end of the list.
+    public void add(int data){
+//Create new node
         Node newNode = new Node(data);
-
-        //If list is empty
+//Checks if the list is empty.
         if(head == null) {
-            //Both head and tail will point to newNode
-            head = tail = newNode;
-            //head's previous will point to null
-            head.previous = null;
-            //tail's next will point to null, as it is the last node of the list
-            tail.next = null;
+            //If list is empty, both head and tail would point to new node.
+            head = newNode;
+            tail = newNode;
+            newNode.next = head;
         }
         else {
-            //newNode will be added after tail such that tail's next will point to newNode
+//tail will point to new node.
             tail.next = newNode;
-            //newNode's previous will point to tail
-            newNode.previous = tail;
-            //newNode will become new tail
+//New node will become new tail.
             tail = newNode;
-            //As it is last node, tail's next will point to null
-            tail.next = null;
+//Since, it is circular linked list tail will points to head.
+            tail.next = head;
         }
     }
-
-    //sortList() will sort the given list in ascending order
+    //This function sorts the list in ascending order
     public void sortList() {
-        Node current = null, index = null;
+//Current will point to head
+        Node current = head, index = null;
         int temp;
-        //Check whether list is empty
         if(head == null) {
-            return;
+            System.out.println("List is empty");
         }
         else {
-            //Current will point to head
-            for(current = head; current.next != null; current = current.next) {
-                //Index will point to node next to current
-                for(index = current.next; index != null; index = index.next) {
-                    //If current's data is greater than index's data, swap the data of current and index
+            do{
+//Index will point to node next to current
+                index = current.next;
+                while(index != head) {
+//If current node is greater than index data, swaps the data
                     if(current.data > index.data) {
-                        temp = current.data;
-                        current.data = index.data;
+                        temp =current.data;
+                        current.data= index.data;
                         index.data = temp;
                     }
+                    index= index.next;
                 }
-            }
+                current =current.next;
+            }while(current.next != head);
         }
     }
-
-    //display() will print out the nodes of the list
+    //Displays all the nodes in the list
     public void display() {
-        //Node current will point to head
         Node current = head;
         if(head == null) {
             System.out.println("List is empty");
-            return;
         }
-        while(current != null) {
-            //Prints each node by incrementing the pointer.
-
-            System.out.print(current.data + " ");
-            current = current.next;
+        else {
+            do{
+//Prints each node by incrementing pointer.
+                System.out.print(" "+ current.data);
+                current = current.next;
+            }while(current != head);
+            System.out.println();
         }
-        System.out.println();
     }
-
     public static void main(String[] args) {
-
-        SortList dList = new SortList();
-        //Add nodes to the list
-        dList.addNode(7);
-        dList.addNode(1);
-        dList.addNode(4);
-        dList.addNode(5);
-        dList.addNode(2);
-
-        //Displaying original list
+        SortList cl = new SortList();
+//Adds data to the list
+        cl.add(70);
+        cl.add(90);
+        cl.add(20);
+        cl.add(100);
+        cl.add(50);
+//Displaying original list
         System.out.println("Original list: ");
-        dList.display();
-
-        //Sorting list
-        dList.sortList();
-
-        //Displaying sorted list
+        cl.display();
+//Sorting list
+        cl.sortList();
+//Displaying sorted list
         System.out.println("Sorted list: ");
-        dList.display();
+        cl.display();
     }
 }
