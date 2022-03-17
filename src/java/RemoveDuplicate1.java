@@ -76,7 +76,7 @@ public class RemoveDuplicate1 {
         }
     }
     public static void main(String[] args) {
-        RemoveDuplicate cl = new RemoveDuplicate();
+        RemoveDuplicate1 cl = new RemoveDuplicate1();
 //Adds data to the list
         cl.add(1);
         cl.add(2);
