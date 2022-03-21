@@ -1,109 +1,92 @@
 public class MinMax {
 
-    class Node{
+    public class Node{
         int data;
-        Node previous;
         Node next;
-
         public Node(int data) {
             this.data = data;
         }
     }
 
-    //Represent the head and tail of the doubly linked list
-    Node head, tail = null;
+    //Declaring head and tail pointer as null.
+    public Node head = null;
+    public Node tail = null;
 
-    //addNode() will add a node to the list
-    public void addNode(int data) {
-        //Create a new node
+    //This function will add the new node at the end of the list.
+    public void add(int data){
+        //Create new node
         Node newNode = new Node(data);
-
-        //If list is empty
+        //Checks if the list is empty.
         if(head == null) {
-            //Both head and tail will point to newNode
-            head = tail = newNode;
-            //head's previous will point to null
-            head.previous = null;
-            //tail's next will point to null, as it is the last node of the list
-            tail.next = null;
-        }
-        else {
-            //newNode will be added after tail such that tail's next will point to newNode
-            tail.next = newNode;
-            //newNode's previous will point to tail
-            newNode.previous = tail;
-            //newNode will become new tail
+            //If list is empty, both head and tail would point to new node.
+            head = newNode;
             tail = newNode;
-            //As it is last node, tail's next will point to null
-            tail.next = null;
+            newNode.next = head;
+        }
+        else {
+            //tail will point to new node.
+            tail.next = newNode;
+            //New node will become new tail.
+            tail = newNode;
+            //Since, it is circular linked list tail will points to head.
+            tail.next = head;
         }
     }
 
-    //MinimumNode() will find out minimum value node in the list
-    public int minimumNode() {
-        //Node current will point to head
+    //Finds out the minimum value node in the list
+    public void minNode() {
         Node current = head;
-        int min;
-
-        //Checks if list is empty
+        //Initializing min to initial node data
+        int min = head.data;
         if(head == null) {
             System.out.println("List is empty");
-            return 0;
         }
         else {
-            //Initially, min will store the value of head's data
-            min = head.data;
-            while(current != null) {
-                //If the value of min is greater than the current's data
-
-                //Then, replace the value of min with current node's data
-
-                if(min > current.data)
+            do{
+                //If current node's data is smaller than min
+                //Then replace value of min with current node's data
+                if(min > current.data) {
                     min = current.data;
-                current = current.next;
-            }
+                }
+                current= current.next;
+            }while(current != head);
+
+            System.out.println("Minimum value node in the list: "+ min);
         }
-        return min;
     }
 
-    //MaximumNode() will find out maximum value node in the list
-    public int maximumNode() {
-        //Node current will point to head
+    //Finds out the maximum value node in the list
+    public void maxNode() {
         Node current = head;
-        int max;
-
-        //Checks if list is empty
+        //Initializing max to initial node data
+        int max = head.data;
         if(head == null) {
             System.out.println("List is empty");
-            return 0;
         }
         else {
-            //Initially, max will store the value of head's data
-            max = head.data;
-            //If value of max is lesser than current's data
-            //Then, replace value of max with current node's data
-            while(current != null) {
-                if(current.data > max)
+            do{
+                //If current node's data is greater than max
+                //Then replace value of max with current node's data
+                if(max < current.data) {
                     max = current.data;
-                current = current.next;
-            }
+                }
+                current= current.next;
+            }while(current != head);
+
+            System.out.println("Maximum value node in the list: "+ max);
         }
-        return max;
     }
 
     public static void main(String[] args) {
-
-        MinMax dList = new MinMax();
-        //Add nodes to the list
-        dList.addNode(5);
-        dList.addNode(7);
-        dList.addNode(9);
-        dList.addNode(1);
-        dList.addNode(2);
-
+        MinMax cl = new MinMax();
+        //Adds data to the list
+        cl.add(5);
+        cl.add(20);
+        cl.add(10);
+        cl.add(1);
         //Prints the minimum value node in the list
-        System.out.println("Minimum value node in the list: "+ dList.minimumNode());
+        cl.minNode();
         //Prints the maximum value node in the list
-        System.out.println("Maximum value node in the list: "+ dList.maximumNode());
+        cl.maxNode();
     }
 }
