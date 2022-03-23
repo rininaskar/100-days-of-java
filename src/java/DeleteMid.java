@@ -107,7 +107,7 @@ public class DeleteMid {
         cl.add(4);
         //Printing original list
         System.out.println("Original List: ");
-        cl.display();
+
         while(cl.head != null) {
             cl.deleteMid();
             //Printing updated list
