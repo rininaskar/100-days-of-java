@@ -1,101 +1,90 @@
 public class DeleteStart {
 
-    class Node{
+    public class Node{
         int data;
-        Node previous;
         Node next;
-
         public Node(int data) {
             this.data = data;
         }
     }
 
-    //Represent the head and tail of the doubly linked list
-    Node head, tail = null;
+    //Declaring head and tail pointer as null.
+    public Node head = null;
+    public Node tail = null;
 
-    //addNode() will add a node to the list
-    public void addNode(int data) {
-        //Create a new node
+    //This function will add the new node at the end of the list.
+    public void add(int data){
+        //Create new node
         Node newNode = new Node(data);
-
-        //If list is empty
+        //Checks if the list is empty.
         if(head == null) {
-            //Both head and tail will point to newNode
-            head = tail = newNode;
-            //head's previous will point to null
-            head.previous = null;
-            //tail's next will point to null, as it is the last node of the list
-            tail.next = null;
+            //If list is empty, both head and tail would point to new node.
+            head = newNode;
+            tail = newNode;
+            newNode.next = head;
         }
         else {
-            //newNode will be added after tail such that tail's next will point to newNode
+            //tail will point to new node.
             tail.next = newNode;
-            //newNode's previous will point to tail
-            newNode.previous = tail;
-            //newNode will become new tail
+            //New node will become new tail.
             tail = newNode;
-            //As it is last node, tail's next will point to null
-            tail.next = null;
+            //Since, it is circular linked list tail will point to head.
+            tail.next = head;
         }
     }
 
-    //deleteFromStart() will delete a node from the beginning of the list
-    public void deleteFromStart() {
+    //Deletes node from the beginning of the list
+    public void deleteStart() {
         //Checks whether list is empty
         if(head == null) {
             return;
         }
         else {
-            //Checks whether the list contains only one element
-            if(head != tail) {
-                //head will point to next node in the list
+            //Checks whether contain only one element
+            //If not, head will point to next element in the list and tail will point to new head.
+            if(head != tail ) {
                 head = head.next;
-                //Previous node to current head will be made null
-                head.previous = null;
+                tail.next = head;
             }
             //If the list contains only one element
-            //then, it will remove node and now both head and tail will point to null
+            //then it will remove it and both head and tail will point to null
             else {
                 head = tail = null;
             }
         }
     }
 
-    //display() will print out the nodes of the list
+    //Displays all the nodes in the list
     public void display() {
-        //Node current will point to head
         Node current = head;
         if(head == null) {
             System.out.println("List is empty");
-            return;
         }
-        while(current != null) {
-            //Prints each node by incrementing the pointer.
-
-            System.out.print(current.data + " ");
-            current = current.next;
+        else {
+            do{
+                //Prints each node by incrementing pointer.
+                System.out.print(" "+ current.data);
+                current = current.next;
+            }while(current != head);
+            System.out.println();
         }
-        System.out.println();
     }
 
     public static void main(String[] args) {
-
-        DeleteStart dList = new DeleteStart();
-        //Add nodes to the list
-        dList.addNode(1);
-        dList.addNode(2);
-        dList.addNode(3);
-        dList.addNode(4);
-        dList.addNode(6);
-
+        DeleteStart cl = new DeleteStart();
+        //Adds data to the list
+        cl.add(1);
+        cl.add(2);
+        cl.add(3);
+        cl.add(4);
         //Printing original list
         System.out.println("Original List: ");
-        dList.display();
-        while(dList.head != null) {
-            dList.deleteFromStart();
+        cl.display();
+        while(cl.head != null) {
+            cl.deleteStart();
             //Printing updated list
             System.out.println("Updated List: ");
-            dList.display();
+            cl.display();
         }
     }
 }
