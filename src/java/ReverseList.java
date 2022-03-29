@@ -68,7 +68,7 @@ public class ReverseList {
         cl.add(3);
         cl.add(4);
         cl.add(5);
-        cl.add(6);
+        cl.add(7);
         System.out.println("Original List: ");
         cl.display();
         System.out.println("Reversed List: ");
