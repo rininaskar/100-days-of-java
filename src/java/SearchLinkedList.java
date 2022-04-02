@@ -62,7 +62,7 @@ public class SearchLinkedList {
         sList.addNode(1);
         sList.addNode(2);
         sList.addNode(3);
-        sList.addNode(4);
+
 
         //Search for node 2 in the list
         sList.searchNode(2);
