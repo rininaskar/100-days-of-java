@@ -2,41 +2,38 @@ public class InsertEnd {
 
     class Node{
         int data;
-        Node previous;
         Node next;
+
         public Node(int data) {
             this.data = data;
-        }
-    }
-    //Represent the head and tail of the doubly linked list
-    Node head, tail = null;
-    //addAtEnd() will add a node to the end of the list
-    public void addAtEnd(int data) {
-        //Create a new node
-        Node newNode = new Node(data);
-        //If list is empty
-        if(head == null) {
-            //Both head and tail will point to newNode
-            head = tail = newNode;
-            //head's previous will point to null
-            head.previous = null;
-            //tail's next will point to null, as it is the last node of the list
-            tail.next = null;
-        }
-        //Add newNode as new tail of the list
-        else {
-            //newNode will be added after tail such that tail's next will point to newNode
-            tail.next = newNode;
-            //newNode's previous will point to tail
-            newNode.previous = tail;
-            //newNode will become new tail
-            tail = newNode;
-            //As it is last node, tail's next will point to null
-            tail.next = null;
+            this.next = null;
         }
     }
 
-    //display() will print out the nodes of the list
+    //Represent the head and tail of the singly linked list
+    public Node head = null;
+    public Node tail = null;
+
+    //addAtEnd() will add a new node to the end of the list
+    public void addAtEnd(int data) {
+        //Create a new node
+        Node newNode = new Node(data);
+
+        //Checks if the list is empty
+        if(head == null) {
+            //If list is empty, both head and tail will point to new node
+            head = newNode;
+            tail = newNode;
+        }
+        else {
+            //newNode will be added after tail such that tail's next will point to newNode
+            tail.next = newNode;
+            //newNode will become new tail of the list
+            tail = newNode;
+        }
+    }
+
+    //display() will display all the nodes present in the list
     public void display() {
         //Node current will point to head
         Node current = head;
@@ -44,31 +41,33 @@ public class InsertEnd {
             System.out.println("List is empty");
             return;
         }
-        System.out.println("Adding a node to the end of the list: ");
+        System.out.println("Adding nodes to the end of the list: ");
         while(current != null) {
-            //Prints each node by incrementing the pointer.
-
+            //Prints each node by incrementing pointer
             System.out.print(current.data + " ");
             current = current.next;
         }
         System.out.println();
     }
+
     public static void main(String[] args) {
-        InsertEnd dList = new InsertEnd();
+
+        InsertEnd sList = new InsertEnd();
+
         //Adding 1 to the list
-        dList.addAtEnd(1);
-        dList.display();
+        sList.addAtEnd(1);
+        sList.display();
+
         //Adding 2 to the list
-        dList.addAtEnd(2);
-        dList.display();
+        sList.addAtEnd(2);
+        sList.display();
+
         //Adding 3 to the list
-        dList.addAtEnd(3);
-        dList.display();
+        sList.addAtEnd(3);
+        sList.display();
+
         //Adding 4 to the list
-        dList.addAtEnd(4);
-        dList.display();
-        //Adding 5 to the list
-        dList.addAtEnd(5);
-        dList.display();
+        sList.addAtEnd(4);
+        sList.display();
     }
 }
