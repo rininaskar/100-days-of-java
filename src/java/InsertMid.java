@@ -2,86 +2,76 @@ public class InsertMid {
 
     class Node{
         int data;
-        Node previous;
         Node next;
 
         public Node(int data) {
             this.data = data;
+            this.next = null;
         }
     }
 
-    public int size = 0;
-    //Represent the head and tail of the doubly linked list
-    Node head, tail = null;
+    public int size;
+    //Represent the head and tail of the singly linked list
+    public Node head = null;
+    public Node tail = null;
 
-    //addNode() will add a node to the list
+    //addNode() will add a new node to the list
     public void addNode(int data) {
         //Create a new node
         Node newNode = new Node(data);
 
-        //If list is empty
+        //Checks if the list is empty
         if(head == null) {
-            //Both head and tail will point to newNode
-            head = tail = newNode;
-            //head's previous will point to null
-            head.previous = null;
-            //tail's next will point to null, as it is the last node of the list
-            tail.next = null;
+            //If list is empty, both head and tail will point to new node
+            head = newNode;
+            tail = newNode;
         }
         else {
             //newNode will be added after tail such that tail's next will point to newNode
             tail.next = newNode;
-            //newNode's previous will point to tail
-            newNode.previous = tail;
-            //newNode will become new tail
+            //newNode will become new tail of the list
             tail = newNode;
-            //As it is last node, tail's next will point to null
-            tail.next = null;
         }
         //Size will count the number of nodes present in the list
         size++;
     }
 
-    //addInMid() will add a node to the middle of the list
-    public void addInMid(int data) {
+    //This function will add the new node at the middle of the list.
+    public void addInMid(int data){
         //Create a new node
         Node newNode = new Node(data);
 
-        //If list is empty
+        //Checks if the list is empty
         if(head == null) {
-            //Both head and tail will point to newNode
-            head = tail = newNode;
-            //head's previous will point to null
-            head.previous = null;
-            //tail's next point to null, as it is the last node of the list
-            tail.next = null;
+            //If list is empty, both head and tail would point to new node
+            head = newNode;
+            tail = newNode;
         }
         else {
-            //current will point to head
-            Node current = head, temp = null;
-
+            Node temp, current;
             //Store the mid position of the list
-            int mid = (size % 2 == 0) ? (size/2) : ((size+1)/2);
+            int count = (size % 2 == 0) ? (size/2) : ((size+1)/2);
+            //Node temp will point to head
+            temp = head;
+            current = null;
 
-            //Iterate through list till current points to mid position
-            for(int i = 1; i < mid; i++){
-                current = current.next;
+            //Traverse through the list till the middle of the list is reached
+            for(int i = 0; i < count; i++) {
+                //Node current will point to temp
+                current = temp;
+                //Node temp will point to node next to it.
+                temp = temp.next;
             }
 
-            //Node temp will point to node next to current
-            temp = current.next;
-            temp.previous = current;
-
-            //newNode will be added between current and temp
+            //current will point to new node
             current.next = newNode;
-            newNode.previous = current;
+            //new node will point to temp
             newNode.next = temp;
-            temp.previous = newNode;
         }
         size++;
     }
 
-    //display() will print out the nodes of the list
+    //display() will display all the nodes present in the list
     public void display() {
         //Node current will point to head
         Node current = head;
@@ -89,9 +79,9 @@ public class InsertMid {
             System.out.println("List is empty");
             return;
         }
-        while(current != null) {
-            //Prints each node by incrementing the pointer.
 
+        while(current != null) {
+            //Prints each node by incrementing pointer
             System.out.print(current.data + " ");
             current = current.next;
         }
@@ -100,27 +90,23 @@ public class InsertMid {
 
     public static void main(String[] args) {
 
-        InsertMid dList = new InsertMid();
-        //Add nodes to the list
-        dList.addNode(1);
-        dList.addNode(2);
+        InsertMid sList = new InsertMid();
+
+        //Adds data to the list
+        sList.addNode(1);
+        sList.addNode(2);
 
         System.out.println("Original list: ");
-        dList.display();
+        sList.display();
 
-        //Adding node '3' in the middle
-        dList.addInMid(3);
+        //Inserting node '3' in the middle
+        sList.addInMid(3);
         System.out.println( "Updated List: ");
-        dList.display();
+        sList.display();
 
-        //Adding node '4' in the middle
-        dList.addInMid(4);
+        //Inserting node '4' in the middle
+        sList.addInMid(4);
         System.out.println("Updated List: ");
-        dList.display();
-
-        //Adding node '5' in the middle
-        dList.addInMid(6);
-        System.out.println("Updated List: ");
-        dList.display();
+        sList.display();
     }
 }
