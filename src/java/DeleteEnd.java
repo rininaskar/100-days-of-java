@@ -1,56 +1,57 @@
 public class DeleteEnd {
 
-    public class Node{
+    class Node{
         int data;
         Node next;
+
         public Node(int data) {
             this.data = data;
+            this.next = null;
         }
     }
 
-    //Declaring head and tail pointer as null.
+    //Represent the head and tail of the singly linked list
     public Node head = null;
     public Node tail = null;
 
-    //This function will add the new node at the end of the list.
-    public void add(int data){
-        //Create new node
+    //addNode() will add a new node to the list
+    public void addNode(int data) {
+        //Create a new node
         Node newNode = new Node(data);
-        //Checks if the list is empty.
+
+        //Checks if the list is empty
         if(head == null) {
-            //If list is empty, both head and tail would point to new node.
+            //If list is empty, both head and tail will point to new node
             head = newNode;
             tail = newNode;
-            newNode.next = head;
         }
         else {
-            //tail will point to new node.
+            //newNode will be added after tail such that tail's next will point to newNode
             tail.next = newNode;
-            //New node will become new tail.
+            //newNode will become new tail of the list
             tail = newNode;
-            //Since, it is circular linked list tail will point to head.
-            tail.next = head;
         }
     }
 
-    //Deletes node from end of the list
-    public void deleteEnd() {
-        //Checks whether list is empty
+    //deleteFromEnd() will delete a node from end of the list
+    public void deleteFromEnd() {
+
+        //Checks if the list is empty
         if(head == null) {
+            System.out.println("List is empty");
             return;
         }
         else {
-            //Checks whether contain only one element
+            //Checks whether the list contains only one element
             if(head != tail ) {
                 Node current = head;
-                //Loop will iterate till the second last element as current.next is pointing to tail
+                //Loop through the list till the second last element such that current.next is pointing to tail
                 while(current.next != tail) {
                     current = current.next;
                 }
-                //Second last element will be new tail
+                //Second last element will become new tail of the list
                 tail = current;
-                //Tail will point to head as it is a circular linked list
-                tail.next = head;
+                tail.next = null;
             }
             //If the list contains only one element
             //Then it will remove it and both head and tail will point to null
@@ -60,37 +61,41 @@ public class DeleteEnd {
         }
     }
 
-    //Displays all the nodes in the list
+    //display() will display all the nodes present in the list
     public void display() {
+        //Node current will point to head
         Node current = head;
         if(head == null) {
             System.out.println("List is empty");
+            return;
         }
-        else {
-            do{
-                //Prints each node by incrementing pointer.
-                System.out.print(" "+ current.data);
-                current = current.next;
-            }while(current != head);
-            System.out.println();
+        while(current != null) {
+            //Prints each node by incrementing pointer
+            System.out.print(current.data + " ");
+            current = current.next;
         }
+        System.out.println();
     }
 
     public static void main(String[] args) {
-        DeleteEnd cl = new DeleteEnd();
+
+        DeleteEnd sList = new DeleteEnd();
+
         //Adds data to the list
-        cl.add(1);
-        cl.add(2);
-        cl.add(3);
-        cl.add(4);
+        sList.addNode(1);
+        sList.addNode(2);
+        sList.addNode(3);
+        sList.addNode(4);
+
         //Printing original list
         System.out.println("Original List: ");
-        cl.display();
-        while(cl.head != null) {
-            cl.deleteEnd();
+        sList.display();
+
+        while(sList.head != null) {
+            sList.deleteFromEnd();
             //Printing updated list
             System.out.println("Updated List: ");
-            cl.display();
+            sList.display();
         }
     }
 }
