@@ -1,118 +1,101 @@
 public class DeleteMid {
 
-    public class Node{
+    class Node{
         int data;
         Node next;
-        public Node(int data) {
+        public Node(int data)
+        {
             this.data = data;
+            this.next = null;
         }
     }
-    public int size;
-    //Declaring head and tail pointer as null.
+
+    //Represent the head and tail of the singly linked list
     public Node head = null;
     public Node tail = null;
 
-    //This function will add the new node at the end of the list.
-    public void add(int data){
-        //Create new node
+    public int size;
+    //addNode() will add a new node to the list
+    public void addNode(int data) {
+//Create a new node
         Node newNode = new Node(data);
-        //Checks if the list is empty.
+//Checks if the list is empty
         if(head == null) {
-            //If list is empty, both head and tail would point to new node.
+            //If list is empty, both head and tail will point to new node
             head = newNode;
             tail = newNode;
-            newNode.next = head;
         }
         else {
-            //tail will point to new node.
+//newNode will be added after tail such that tail's next will point to newNode
             tail.next = newNode;
-            //New node will become new tail.
+//newNode will become new tail of the list
             tail = newNode;
-            //Since, it is circular linked list tail will point to head.
-            tail.next = head;
         }
-        //Counts the number of nodes in list
         size++;
     }
-
-    //Deletes node from the middle of the list
-    public void deleteMid() {
-        Node current, temp;
-        //Checks whether list is empty
+    //deleteFromMid() will delete a node from the middle of the list
+    void deleteFromMid() {
+        Node temp, current;
+//Checks if the list is empty
         if(head == null) {
+            System.out.println("List is empty");
             return;
         }
         else {
-            //Store the mid position of the list
+//Store the mid position of the list
             int count = (size % 2 == 0) ? (size/2) : ((size+1)/2);
-            //Checks whether head is equal to tail or not, if yes then list has only one node.
+//Checks whether the head is equal to the tail or not, if yes then the list has only one node.
             if( head != tail ) {
-                //Initially temp will point to head;
+                //Initially, temp will point to head
                 temp = head;
                 current = null;
-                //Current will point to node previous to temp
-                //If temp is pointing to node 2 then current will points to node 1.
+//Current will point to node previous to temp
+                //If temp is pointing to node 2 then current will point to node 1.
                 for(int i = 0; i < count-1; i++){
                     current = temp;
                     temp = temp.next;
                 }
-
                 if(current != null) {
                     //temp is the middle that needs to be removed.
                     //So, current node will point to node next to temp by skipping temp.
                     current.next = temp.next;
-                    //Delete temp;
+//Delete temp
                     temp = null;
                 }
-                //Current points to null then head and tail will point to node next to temp.
+                //If current points to NULL then, head and tail will point to node next to temp.
                 else {
                     head = tail = temp.next;
-                    tail.next = head;
-                    //Delete temp;
+//Delete temp
                     temp = null;
                 }
-
             }
-            //If the list contains only one element
-            //then it will remove it and both head and tail will point to null
+//If the list contains only one element
+            //then it will remove it and both head and tail will point to NULL
             else {
                 head = tail = null;
             }
         }
         size--;
     }
-
-    //Displays all the nodes in the list
+    //display() will display all the nodes present in the list
     public void display() {
+//Node current will point to head
         Node current = head;
         if(head == null) {
             System.out.println("List is empty");
+            return;
         }
-        else {
-            do{
-                //Prints each node by incrementing pointer.
-                System.out.print(" "+ current.data);
-                current = current.next;
-            }while(current != head);
-            System.out.println();
+        while(current != null) {
+            //Prints each node by incrementing pointer
+            System.out.print(current.data + " ");
+            current = current.next;
         }
+        System.out.println();
     }
 
     public static void main(String[] args) {
-        DeleteMid cl = new DeleteMid();
-        //Adds data to the list
-        cl.add(1);
-        cl.add(2);
-        cl.add(3);
-        cl.add(4);
-        //Printing original list
-        System.out.println("Original List: ");
 
-        while(cl.head != null) {
-            cl.deleteMid();
-            //Printing updated list
-            System.out.println("Updated List: ");
-            cl.display();
+
         }
     }
-}
+
