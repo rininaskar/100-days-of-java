@@ -1,78 +1,90 @@
 public class ReverseList {
 
-    public class Node{
+    class Node{
         int data;
         Node next;
+
         public Node(int data) {
             this.data = data;
+            this.next = null;
         }
     }
 
-    //Declaring head and tail pointer as null.
+    //Represent the head and tail of the singly linked list
     public Node head = null;
     public Node tail = null;
 
-    //This function will add the new node at the end of the list.
-    public void add(int data){
-        //Create new node
+    //addNode() will add a new node to the list
+    public void addNode(int data) {
+        //Create a new node
         Node newNode = new Node(data);
-        //Checks if the list is empty.
+
+        //Checks if the list is empty
         if(head == null) {
-            //If list is empty, both head and tail would point to new node.
+            //If list is empty, both head and tail will point to new node
             head = newNode;
             tail = newNode;
-            newNode.next = head;
         }
         else {
-            //tail will point to new node.
+            //newNode will be added after tail such that tail's next will point to newNode
             tail.next = newNode;
-            //New node will become new tail.
+            //newNode will become new tail of the list
             tail = newNode;
-            //Since, it is circular linked list tail will point to head.
-            tail.next = head;
         }
     }
 
-    //Displays all the nodes in the list
-    public void display() {
-        Node current = head;
+    //reverse() will help the reverse the order of the list
+    public void reverse(Node current) {
+        //Checks if list is empty
         if(head == null) {
             System.out.println("List is empty");
+            return;
         }
         else {
-            do{
-                //Prints each node by incrementing pointer.
-                System.out.print(" "+ current.data);
-                current = current.next;
-            }while(current != head);
-            System.out.println();
+            //Checks if the next node is null, if yes then prints it.
+            if(current.next == null) {
+                System.out.print(current.data + " ");
+                return;
+            }
+            //Recursively calls the reverse function
+            reverse(current.next);
+            System.out.print(current.data + " ");
         }
     }
 
-    //Reverse the order of the nodes present in the list.
-    public void reverse(Node current) {
-        //Checks if the next node is head, if yes then prints it.
-        if(current.next == head) {
-            System.out.print(" "+current.data);
+    //display() will display all the nodes present in the list
+    public void display() {
+        //Node current will point to head
+        Node current = head;
+
+        if(head == null) {
+            System.out.println("List is empty");
             return;
         }
-        //Recursively calls the reverse function
-        reverse(current.next);
-        System.out.print(" "+current.data);
+
+        while(current != null) {
+            //Prints each node by incrementing pointer
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
-        ReverseList cl = new ReverseList();
-        cl.add(1);
-        cl.add(2);
-        cl.add(3);
-        cl.add(4);
-        cl.add(6);
-        cl.add(7);
+
+        ReverseList sList = new ReverseList();
+
+        //Add nodes to the list
+        sList.addNode(1);
+        sList.addNode(2);
+        sList.addNode(3);
+        sList.addNode(4);
+
         System.out.println("Original List: ");
-        cl.display();
+        sList.display();
+
         System.out.println("Reversed List: ");
         //Print reversed list
-        cl.reverse(cl.head);
+        sList.reverse(sList.head);
     }
 }
