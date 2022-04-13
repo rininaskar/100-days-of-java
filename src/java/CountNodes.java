@@ -1,59 +1,83 @@
 public class CountNodes {
 
-    public class Node{
+    class Node{
         int data;
         Node next;
+
         public Node(int data) {
             this.data = data;
+            this.next = null;
         }
     }
 
-    public int count;
-    //Declaring head and tail pointer as null.
+    //Represent the head and tail of the singly linked list
     public Node head = null;
     public Node tail = null;
 
-    //This function will add the new node at the end of the list.
-    public void add(int data){
-        //Create new node
+    //addNode() will add a new node to the list
+    public void addNode(int data) {
+        //Create a new node
         Node newNode = new Node(data);
-        //Checks if the list is empty.
+
+        //Checks if the list is empty
         if(head == null) {
-            //If list is empty, both head and tail would point to new node.
+            //If list is empty, both head and tail will point to new node
             head = newNode;
             tail = newNode;
-            newNode.next = head;
         }
         else {
-            //tail will point to new node.
+            //newNode will be added after tail such that tail's next will point to newNode
             tail.next = newNode;
-            //New node will become new tail.
+            //newNode will become new tail of the list
             tail = newNode;
-            //Since, it is circular linked list tail will point to head.
-            tail.next = head;
         }
     }
 
-    //This function will count the nodes of circular linked list
-    public void countNodes() {
+    //countNodes() will count the nodes present in the list
+    public int countNodes() {
+        int count = 0;
+        //Node current will point to head
         Node current = head;
-        do{
-            //Increment the count variable by 1 for each node
+
+        while(current != null) {
+            //Increment the count by 1 for each node
             count++;
             current = current.next;
-        }while(current != head);
-        System.out.println("Count of nodes present in circular linked list: "+count);
+        }
+        return count;
+    }
+
+    //display() will display all the nodes present in the list
+    public void display() {
+        //Node current will point to head
+        Node current = head;
+        if(head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+        System.out.println("Nodes of singly linked list: ");
+        while(current != null) {
+            //Prints each node by incrementing pointer
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
-        CountNodes cl = new CountNodes();
-        cl.add(1);
-        cl.add(2);
-        cl.add(4);
-        cl.add(1);
-        cl.add(2);
-        cl.add(3);
-        //Counts the number of nodes present in the list
-        cl.countNodes();
+
+        CountNodes sList = new CountNodes();
+
+        //Add nodes to the list
+        sList.addNode(1);
+        sList.addNode(2);
+        sList.addNode(3);
+        sList.addNode(4);
+
+        //Displays the nodes present in the list
+        sList.display();
+
+        //Counts the nodes present in the given list
+        System.out.println("Count of nodes present in the list: " + sList.countNodes());
     }
 }
