@@ -10,9 +10,9 @@ public class LinkedListExamples {
     public void display()
     {
         Node n = head;
-        while (n != null)
         {
-            System.out.print(n.data+" \n");
+            while (n != null)
+                System.out.print(n.data+" \n");
             n = n.next;
         }
     }
