@@ -12,7 +12,7 @@ public class LinkedListExamples {
         Node n = head;
         {
 
-                System.out.print(n.data+" \n");
+
             n = n.next;
         }
     }
