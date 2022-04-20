@@ -1,19 +1,14 @@
 public class Pattern {
 
-    public static void main(String[] args)
-    {
-        int size = 0;
-        Character c;
-        System.out.println();
-        size = 5;
-        int i, j, k;
-        for (i = 0; i < size + 1; i++) { for (j = size; j > i; j--) {
-            System.out.print(" ");
-        }
-            for (k = 0; k < (2 * i - 1); k++) {
-                System.out.print("*");
+    public static void main(String []args){
+        int i,j,lines=5;
+        for(i=1;i<=lines;i++){// this loop is used to print the lines
+            for(j=lines;j>=1;j--){// this loop is used to print numbers in a line
+                if(j!=i)
+                    System.out.print(j);
+                else
+                    System.out.print("*");
             }
-            System.out.println();
+            System.out.println("");
         }
-    }
-}
+    }}
