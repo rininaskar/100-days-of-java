@@ -12,7 +12,8 @@ public class Pattern {
             }
             j--;
             System.out.print("*");
-            while (j >= 1) {// this loop is used to print * in a line
+            while (j >= 1)
+            {// this loop is used to print * in a line
                 if (i == j)
                     System.out.print("*");
                 else
