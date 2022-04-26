@@ -1,110 +1,30 @@
 public class Pattern {
 
-    public static void main(String []args){
-        int matrix[][]=new int[5][5];
-        int i,j,k,l;
-        int direction=1;
-        for(i=0;i<5;i++){
-            for(j=0;j<5;j++){
-                matrix[i][j]=0;
+    public static void main(String[] args) {
+        int lines = 4;
+        int i, j;
+        int space = 0;
+        for (i = 0; i < lines; i++) {// this loop is used to print lines
+            for (j = 1; j <= space; j++) {// this loop is used to print space in a line
+                System.out.print(" ");
             }
-        }
-
-        for(i=1,j=0,k=0;i<=16;i++){
-            matrix[j][k]=i;
-
-            switch(direction){
-                case 1:if(k+1<5){
-                    if(matrix[j][k+1]==0){
-                        k++;
-                        continue;
-                    }
-                    else{
-
-                        j++;
-                        direction=2;
-                        continue;
-                    }
-                }
-
-                else{
-                    j++;
-                    direction=2;
-                    continue;
-                }
-
-
-
-
-                case 2:if(j+1<5){
-
-                    if(matrix[j+1][k]==0){
-                        j++;
-                        continue;
-                    }
-                    else{
-                        direction=3;
-                        k--;
-                        continue;
-                    }
-                }
-                else{
-                    direction=3;
-                    k--;
-                    continue;
-                }
-
-
-
-
-                case 3:if(k-1>=0){
-                    if(matrix[j][k-1]==0){
-
-                        k--;
-                        continue;
-                    }
-                    else{
-                        direction=4;
-                        j--;
-                        continue;
-                    }
-                }
-                else{
-                    direction=4;
-                    j--;
-                    continue;
-                }
-
-
-                case 4:if(j-1>=0){
-                    if(matrix[j-1][k]==0){
-
-                        j--;
-                        continue;
-                    }
-                    else{
-                        k++;
-                        direction=1;
-                        continue;
-                    }
-                }
-                else{
-                    k++;
-                    direction=1;
-                    continue;
-                }
+            for (j = 1; j <= lines; j++) {// this loop is used to print numbers in a line
+                if (j <= (lines - i))
+                    System.out.print(j);
+                else
+                    System.out.print("*");
             }
-        }
-        for(i=0;i<5;i++){
-            for(j=0;j<5;j++){
-                if(matrix[i][j]==0){
-                    System.out.print("\t");
-                }
-                else{
-                    System.out.print(matrix[i][j]+"\t");
-                }
+            j--;
+            while (j > 0) {// this loop is used to print numbers in a line
+                if (j > lines - i)
+                    System.out.print("*");
+                else
+                    System.out.print(j);
+                j--;
             }
+            if ((lines - i) > 9)// this loop is used to increment space
+                space = space + 1;
             System.out.println("");
         }
-
     }
+}
