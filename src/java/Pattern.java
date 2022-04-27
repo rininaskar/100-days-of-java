@@ -1,29 +1,27 @@
 public class Pattern {
 
-    public static void main(String[] args) {
-        int lines = 4;
-        int i, j;
-        int space = 0;
-        for (i = 0; i < lines; i++) {// this loop is used to print lines
-            for (j = 1; j <= space; j++) {// this loop is used to print space in a line
-                System.out.print(" ");
+    public static void main(String []args){
+        int lines=10;
+        int i,j;
+        int count;
+        for(i=1;i<=lines;i++){// this loop is used to print lines
+            count=0;
+            for(j=1;j<lines;j++){// this loop is used to print numbers in a line
+                if(count<i-1){
+                    if(!(j<lines-i+1)){
+                        System.out.print(j);
+                        count++;
+                    }
+                }
             }
-            for (j = 1; j <= lines; j++) {// this loop is used to print numbers in a line
-                if (j <= (lines - i))
+            System.out.print("0");
+            count=0;
+            for(--j;j>=1;j--){// this loop is used to print j and increment count
+                if(count<i-1){
                     System.out.print(j);
-                else
-                    System.out.print("*");
+                    count++;
+                }
             }
-            j--;
-            while (j > 0) {// this loop is used to print numbers in a line
-                if (j > lines - i)
-                    System.out.print("*");
-                else
-                    System.out.print(j);
-                j--;
-            }
-            if ((lines - i) > 9)// this loop is used to increment space
-                space = space + 1;
             System.out.println("");
         }
     }
