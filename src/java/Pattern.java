@@ -1,5 +1,6 @@
 public class Pattern {
 
+    public static void main(String[] args)
     {   int i ,j;
         int n = 5;
         for(i = n; i>0 ; i-- )
