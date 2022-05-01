@@ -1,15 +1,16 @@
 public class Pattern {
 
-    public static void main(String[] args)
-    {   int i ,j;
-        int n = 5;
-        for(i = n; i>0 ; i-- )
-        {
-            for(j = 1; j<=i ; j++)
-            {
-                System.out.print(j);
+    public static void main(String[] args) {
+        int size;
+        size = 6;
+        for (int i = size; i != 0; i--) {
+            for (int j = 0; j < size - i; j++) {
+                System.out.print(" ");
             }
-            System.out.println("");
+            for (int k = 0; k < (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
