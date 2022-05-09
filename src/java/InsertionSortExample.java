@@ -18,5 +18,15 @@ public class InsertionSortExample {
         for (int i : arr1) {
             System.out.print(i + " ");
         }
-    }
-}
+
+
+       System.out.println();
+
+               insertionSort(arr1);//sorting array using insertion sort
+
+               System.out.println("After Insertion Sort");
+               for(int i:arr1){
+               System.out.print(i+" ");
+               }
+           }
+      }
