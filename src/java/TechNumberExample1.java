@@ -16,7 +16,7 @@ public class TechNumberExample1
 //incerements the variable digits by 1
             digits++;
 //removes the last digit of the given number
-            num = num / 10;
+            num = num / 20;
         }
 //check if the given number has an even number of digits or not
         if (digits % 2 == 0)
