@@ -3,7 +3,7 @@ public class FascinatingNumberExample1
 {
     public static void main(String args[])
     {
-        int num, n2, n3;
+        int num, n2, n4;
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter any Number: ");
         num = sc.nextInt();
