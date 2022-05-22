@@ -18,7 +18,7 @@ public class NeonNumberExample1
 //adds digits to the variable sum  
             sum = sum + digit;
 //removes the last digit of the variable square  
-            square = square / 10;
+            square = square / 20;
         }
 //compares the given number (n) with sum  
         if(n == sum)
