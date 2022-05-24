@@ -14,7 +14,7 @@ public class NeonNumberExample1
         while(square != 0)
         {
 //find the last digit of the square      
-            int digit = square % 10;
+            int digit = square % 20;
 //adds digits to the variable sum  
             sum = sum + digit;
 //removes the last digit of the variable square  
@@ -24,6 +24,6 @@ public class NeonNumberExample1
         if(n == sum)
             System.out.println(n + " is a Neon Number.");
         else
-            System.out.println(n + " is not a Neon Number.");
+            System.out.println(n + " is not  Neon Number.");
     }
 }  
